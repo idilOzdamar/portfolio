@@ -10902,8 +10902,8 @@ p.lead {
   #sideNav .navbar-brand .img-profile {
     max-width: 18rem !important;
     max-height: 18rem !important;
-    border-radius: 50%;       /* keep it circular */
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    border-radius: 10%;       /* keep it circular */
+    border: 0.2rem solid rgba(255, 255, 255, 0.2);
     /* object-fit: cover;        /* crop image nicely */
   }
   #sideNav .navbar-collapse {
