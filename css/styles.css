@@ -10890,7 +10890,7 @@ p.lead {
     left: 0;
     display: flex;
     flex-direction: column;
-    width: 17rem;
+    width: 20rem;
     height: 100vh;
   }
   #sideNav .navbar-brand {
@@ -10900,11 +10900,11 @@ p.lead {
     padding: 0.5rem;
   }
   #sideNav .navbar-brand .img-profile {
-    max-width: 17rem;
-    max-height: 17rem;
+    max-width: 18rem;
+    max-height: 18rem;
     border-radius: 50%;       /* keep it circular */
     border: 0.5rem solid rgba(255, 255, 255, 0.2);
-    object-fit: cover;        /* crop image nicely */
+    /* object-fit: cover;        /* crop image nicely */
   }
   #sideNav .navbar-collapse {
     display: flex;
