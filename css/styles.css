@@ -186,7 +186,7 @@ address {
 
 ol,
 ul {
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 
 ol,
@@ -10890,7 +10890,7 @@ p.lead {
     left: 0;
     display: flex;
     flex-direction: column;
-    width: 20rem;
+    width: 19rem;
     height: 100vh;
   }
   #sideNav .navbar-brand {
@@ -10959,6 +10959,24 @@ section.resume-section {
 section.resume-section .resume-section-content {
   width: 100%;
 }
+
+.projects-section {
+  display: block; /* ensures vertical stacking */
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  max-width: 75rem;
+}
+.project {
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd; /* subtle line between projects */
+}
+
+.project:last-child {
+  border-bottom: none; /* no line after the last project */
+}
+
 
 @media (min-width: 768px) {
   section.resume-section {
