@@ -10895,13 +10895,16 @@ p.lead {
   }
   #sideNav .navbar-brand {
     display: flex;
+    flex-direction: column;  /* stack vertically */
     margin: auto auto 0;
     padding: 0.5rem;
   }
   #sideNav .navbar-brand .img-profile {
     max-width: 15rem;
     max-height: 15rem;
+    border-radius: 50%;       /* keep it circular */
     border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    /* object-fit: cover;        /* crop image nicely */
   }
   #sideNav .navbar-collapse {
     display: flex;
