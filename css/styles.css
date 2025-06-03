@@ -10955,6 +10955,10 @@ section.resume-section {
   padding-top: 5rem;
   padding-bottom: 5rem;
   max-width: 75rem;
+
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
 }
 section.resume-section .resume-section-content {
   width: 100%;
@@ -10967,6 +10971,10 @@ section.resume-section .resume-section-content {
   padding-top: 5rem;
   padding-bottom: 5rem;
   max-width: 75rem;
+
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
 }
 .project {
   padding: 15px 0;
