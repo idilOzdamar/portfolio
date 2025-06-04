@@ -11034,7 +11034,7 @@ section.resume-section .resume-section-content {
 
 @media (max-width: 768px) {
   .img-profile {
-    width: 90px !important;
+    width: 100px !important;
     max-width: 100px !important;
     margin-left: auto;
     margin-right: auto;
@@ -11067,6 +11067,11 @@ section.resume-section .resume-section-content {
   }
 }
 
+.img-profile.shrink {
+  width: 60px !important;
+  max-width: 60px !important;
+  transition: width 0.3s ease;
+}
 .img-profile {
   width: 200px;
   height: auto;
