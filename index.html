@@ -278,16 +278,19 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
 
-        <!-- IDIL ADDED for mobile view shrinking top bar------------ -->
+        <!-- IDIL ADDED for mobile view shrinking top bar and also adjusting the start height of the about section ------------ -->
         <script>
             function handleScroll() {
               const img = document.querySelector('.img-profile');
               const navbarBrand = document.querySelector('.navbar-brand');
+              const section = document.querySelector('section.resume-section');  // Needed because in order to adjust about section text height
               const isMobile = window.matchMedia('(max-width: 991.98px)').matches;
-          
+              
+              // Exit early if elements not found
               if (!img || !navbarBrand) return;
           
               if (isMobile) {
+                // Add or remove shrink class based on scroll position
                 if (window.scrollY > 50) {
                   img.classList.add('shrink');
                   navbarBrand.classList.add('shrink');
@@ -298,10 +301,16 @@
                 // Set navbar-brand height to image height to keep them consistent
                 const imgHeight = img.getBoundingClientRect().height;
                 navbarBrand.style.height = `${imgHeight}px`;
+
+                // Adjust top padding of resume section to avoid content overlapping navbar
+                const navbarHeight = navbarBrand.getBoundingClientRect().height;
+                section.style.paddingTop = `${navbarHeight + 20}px`; // 20px extra space
               } else {
+                // Reset everything on larger screens
                 img.classList.remove('shrink');
                 navbarBrand.classList.remove('shrink');
                 navbarBrand.style.height = ''; // reset to default
+                section.style.paddingTop = '';
               }
             }
           
