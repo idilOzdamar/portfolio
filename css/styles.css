@@ -11031,15 +11031,18 @@ section.resume-section .resume-section-content {
   }
 }
 
+@media (max-width: 768px) {
+  .img-profile {
+    width: 90px !important; /* override Bootstrap's width: 100% */
+    max-width: 100px !important; /* smaller on mobile */
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .img-profile {
   width: 200px; /* desktop size */
   height: auto;
   display: block;
 }
 
-@media (max-width: 767.98px) {
-  .img-profile {
-    width: 90px !important; /* override Bootstrap's width: 100% */
-    max-width: 100px !important; /* smaller on mobile */
-  }
-}
