@@ -11044,10 +11044,14 @@ section.resume-section .resume-section-content {
   .navbar-brand {
     display: flex;
     justify-content: center;
+    width: 100%;
   }
 
   .img-profile {
+    width: 90px !important;
+    max-width: 100px !important;
     margin: 0 auto;
+    display: block;
   }
 }
 
