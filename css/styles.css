@@ -11055,6 +11055,25 @@ section.resume-section .resume-section-content {
   }
 }
 
+@media (max-width: 991.98px) {
+  .navbar-toggler {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1050;
+  }
+
+  .navbar-brand {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Make sure there's enough height to center toggle */
+  }
+}
+
+
 .img-profile {
   width: 200px; /* desktop size */
   height: auto;
