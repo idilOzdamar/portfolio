@@ -11039,7 +11039,7 @@ section.resume-section .resume-section-content {
 
 @media (max-width: 767.98px) {
   .img-profile {
-    /*width: 90px;  mobile size */
+    width: 90px !important; /* override Bootstrap's width: 100% */
     max-width: 100px !important; /* smaller on mobile */
   }
 }
