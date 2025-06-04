@@ -11049,19 +11049,26 @@ section.resume-section .resume-section-content {
     align-items: center;
     width: 100%;
     height: 100px;
+    transition: height 0.3s ease, padding 0.3s ease;
+  }
+
+  .navbar-brand.shrink {
+    height: 80px; /* smaller height when shrunk */
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 
   .img-profile {
-    width: 100px !important;
-    max-width: 100px !important;
+    width: 130px !important;
+    max-width: 130px !important;
     margin: 0 auto;
     display: block;
     transition: width 0.3s ease; /* smooth resize */
   }
 
   .img-profile.shrink {
-    width: 60px !important;
-    max-width: 60px !important;
+    width: 80px !important;
+    max-width: 800px !important;
   }
   .navbar-toggler {
     position: absolute;
