@@ -295,9 +295,13 @@
                   img.classList.remove('shrink');
                   navbarBrand.classList.remove('shrink');
                 }
+                // Set navbar-brand height to image height to keep them consistent
+                const imgHeight = img.getBoundingClientRect().height;
+                navbarBrand.style.height = `${imgHeight}px`;
               } else {
                 img.classList.remove('shrink');
                 navbarBrand.classList.remove('shrink');
+                navbarBrand.style.height = ''; // reset to default
               }
             }
           
@@ -305,6 +309,7 @@
             window.addEventListener('resize', handleScroll);
             window.addEventListener('load', handleScroll);
         </script>
+          
           
         <!-- ----------------- -->
     </body>
