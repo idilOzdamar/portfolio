@@ -11022,6 +11022,7 @@ section.resume-section .resume-section-content {
     min-height: 100vh;
   }
 }
+
 @media (min-width: 992px) {
   section.resume-section {
     padding-left: 3rem;
@@ -11033,8 +11034,8 @@ section.resume-section .resume-section-content {
 
 @media (max-width: 768px) {
   .img-profile {
-    width: 90px !important; /* override Bootstrap's width: 100% */
-    max-width: 100px !important; /* smaller on mobile */
+    width: 90px !important;
+    max-width: 100px !important;
     margin-left: auto;
     margin-right: auto;
   }
@@ -11042,9 +11043,12 @@ section.resume-section .resume-section-content {
 
 @media (max-width: 991.98px) {
   .navbar-brand {
+    position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
+    height: 100px;
   }
 
   .img-profile {
@@ -11053,9 +11057,7 @@ section.resume-section .resume-section-content {
     margin: 0 auto;
     display: block;
   }
-}
 
-@media (max-width: 991.98px) {
   .navbar-toggler {
     position: absolute;
     left: 1rem;
@@ -11063,20 +11065,12 @@ section.resume-section .resume-section-content {
     transform: translateY(-50%);
     z-index: 1050;
   }
-
-  .navbar-brand {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px; /* Make sure there's enough height to center toggle */
-  }
 }
 
-
 .img-profile {
-  width: 200px; /* desktop size */
+  width: 200px;
   height: auto;
   display: block;
 }
+
 
