@@ -10985,7 +10985,7 @@ section.resume-section .resume-section-content {
   border-bottom: none; /* no line after the last project */
 }
 
-/* Idil ADDED */
+/* ------------------ Idil ADDED ---------------*/
 
 .two-column {
   display: flex;
@@ -11013,9 +11013,9 @@ section.resume-section .resume-section-content {
   border: 0;
 }
 
+/* ----------------------------------------------  */
 
-/* -------------------  */
-
+/* --------IDIL ADDED FOR MOBILE VIEW -----------  */
 
 @media (min-width: 768px) {
   section.resume-section {
@@ -11052,12 +11052,17 @@ section.resume-section .resume-section-content {
   }
 
   .img-profile {
-    width: 90px !important;
+    width: 100px !important;
     max-width: 100px !important;
     margin: 0 auto;
     display: block;
+    transition: width 0.3s ease; /* smooth resize */
   }
 
+  .img-profile.shrink {
+    width: 60px !important;
+    max-width: 60px !important;
+  }
   .navbar-toggler {
     position: absolute;
     left: 1rem;
@@ -11067,15 +11072,11 @@ section.resume-section .resume-section-content {
   }
 }
 
-.img-profile.shrink {
-  width: 60px !important;
-  max-width: 60px !important;
-  transition: width 0.3s ease;
-}
+
 .img-profile {
   width: 200px;
   height: auto;
   display: block;
 }
 
-
+/* -------------------------------  */
