@@ -278,21 +278,26 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
 
-        <!-- IDIL ADDED------------ -->
+        <!-- IDIL ADDED for mobile view shrinking top bar------------ -->
         <script>
             function handleScroll() {
               const img = document.querySelector('.img-profile');
+              const navbarBrand = document.querySelector('.navbar-brand');
               const isMobile = window.matchMedia('(max-width: 991.98px)').matches;
-              if (!img) return;
+          
+              if (!img || !navbarBrand) return;
           
               if (isMobile) {
                 if (window.scrollY > 50) {
                   img.classList.add('shrink');
+                  navbarBrand.classList.add('shrink');
                 } else {
                   img.classList.remove('shrink');
+                  navbarBrand.classList.remove('shrink');
                 }
               } else {
                 img.classList.remove('shrink');
+                navbarBrand.classList.remove('shrink');
               }
             }
           
@@ -300,6 +305,7 @@
             window.addEventListener('resize', handleScroll);
             window.addEventListener('load', handleScroll);
         </script>
+          
         <!-- ----------------- -->
     </body>
 </html>
