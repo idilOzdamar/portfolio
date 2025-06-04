@@ -11040,6 +11040,17 @@ section.resume-section .resume-section-content {
   }
 }
 
+@media (max-width: 991.98px) {
+  .navbar-brand {
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-profile {
+    margin: 0 auto;
+  }
+}
+
 .img-profile {
   width: 200px; /* desktop size */
   height: auto;
