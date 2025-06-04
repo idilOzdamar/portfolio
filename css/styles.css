@@ -11030,3 +11030,9 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+@media (max-width: 767.98px) {
+  .img-profile {
+    width: 90px; /* mobile size */
+  }
+}
