@@ -11083,8 +11083,8 @@ section.resume-section .resume-section-content {
 
 @media (max-width: 768px) {
   .img-profile {
-    width: 100px !important;
-    max-width: 100px !important;
+    width: 130px !important;
+    max-width: 130px !important;
     margin-left: auto;
     margin-right: auto;
   }
