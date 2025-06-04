@@ -11034,10 +11034,12 @@ section.resume-section .resume-section-content {
 .img-profile {
   width: 200px; /* desktop size */
   height: auto;
+  display: block;
 }
 
 @media (max-width: 767.98px) {
   .img-profile {
-    width: 90px; /* mobile size */
+    /*width: 90px;  mobile size */
+    max-width: 100px !important; /* smaller on mobile */
   }
 }
