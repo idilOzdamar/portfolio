@@ -11074,16 +11074,14 @@ section.resume-section .resume-section-content {
   }
 }
 
-
-
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .img-profile {
-    width: 110px !important;
-    max-width: 110px !important;
+    width: 80px !important;
+    max-width: 80px !important;
     margin-left: auto;
     margin-right: auto;
   }
-}
+} */
 
 
 
